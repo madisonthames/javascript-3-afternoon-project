@@ -21,7 +21,9 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 */
 
 //Code Here
-let evenNumbers // = mixedNumbers.filter(/* Provide Your Callback Here */)
+let evenNumbers = mixedNumbers.filter(function(element) {
+  return element % 2 === 0 
+})  // = mixedNumbers.filter(/* Provide Your Callback Here */)
 
 
 
@@ -44,7 +46,13 @@ const prices = [15.00, 23.00, 78.00, 34.00, 12.00, 86.00, 12.00, 79.00, 32.00];
 */
 
 //Code Here
-let postTaxPrices // = prices.map(/* Provide Your Callback Here );
+let postTaxPrices = []
+  
+prices.map(function(element) {
+  postTaxPrices.push(element * 1.07);
+
+})
+  // = prices.map(/* Provide Your Callback Here );
 
 
 
@@ -62,8 +70,11 @@ const populations = [8175133, 3792621, 2695598, 2100263];
   (runningTotal, curElement, curIndex, wholeArray)=>{} Arrow Form
 */
 
-//Code Here
-let totalPopulation //  = populations.reduce(/* Provide Your Callback Here */)
+// function sumOfPop() {
+// let totalPopulations = arr;
+// return arr.reduce(function(runningTotal) {
+//   populations(runningTotal);
+// })
 
 
 
